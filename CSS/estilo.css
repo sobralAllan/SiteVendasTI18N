@@ -4,14 +4,211 @@ body{
     padding: 0%;/* Espaço Interno da Página */
 }
 
-.inicial{
-    background-color: #111;
-    width: 25%;
-    height: 25%;
+#boasVindas{
+    width: 100%;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 30px;
+    background-color: #fff;
 }
 
 #imagemInicial{
     background-color: #456;
     width: 100%;
-    padding: 5% 10% 5% 3%;
+    padding-left: 1%;
+}
+
+.galeria, .templateInicial{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-gap: 1%;
+}
+
+#gd1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 2px solid #788;
+}
+
+#gd2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 2px solid #788;
+}
+
+#gd3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 2px solid #788;
+}
+
+#gd4{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: 2px solid #788;
+}
+
+#gd5{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: 2px solid #788;
+}
+
+#gd6{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: 2px solid #788;
+}
+
+#gd7{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    border: 2px solid #788;
+}
+
+.gd{
+    width: 100%;/* Largura */
+    height: 50%;/* Altura */
+    object-fit:cover;
+}
+
+h3{
+    font-family: 'Gill Sans';
+    font-size: 25px;
+    text-align: center;
+    background-color: #fff;
+    padding: 3%;
+    margin-top: -1%;
+    margin-bottom: -1%;
+}
+
+.dinheiro{
+    font-family:'Impact';
+    font-size: 40px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: -0.7%;
+}
+
+.botao{
+    text-decoration: none;
+    font-family: 'Gill Sans';
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #000;
+    padding: 5% 15% 5% 15%;
+    background-color: #fff;
+    font-weight: bold;
+    color: #000;
+    border-radius: 15%;
+    margin-left: 20%;
+}
+
+.ti{
+    width: 90%;
+    height: 100%;
+    margin: 0%;
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+    display: inline;
+    padding: 1% 8% 1% 8%;
+    border: 2px solid black;
+    background-color: #999;
+    font-size: 21px;
+}
+
+li:hover{
+    background-color: #125342;
+    color: #fff;
+    border: 5px solid #900;
+}
+
+ul{
+    display: inline;
+    margin-top: -3%;
+    margin-left: -1.5%;
+}
+
+nav{
+    margin-top: -3.5%;
+    height: 10%;
+    margin-bottom: 1.3%;
+}
+
+header{
+    margin-top: 5%;
+    height: 10%;
+}
+
+#historia{
+    height: 30%;
+    border: 2px solid #000;
+    padding: 5%;
+    font-size: 30px;
+    text-align: justify;
+    background-color: #fff;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#fechamento, #rodape{
+    height: 10%;
+    text-align: center;
+    border: 2px solid #000;
+    margin-top: 1%;
+    font-size: 15px;
+    background-color: #fff;
+    background-image: url('../Imagens/monitor23.jpg');
+    background-repeat:no-repeat;
+}
+
+/* Tela de Celular */
+@media screen and (max-width: 767px){
+    .botao{
+        text-decoration: none;
+        font-family: 'Gill Sans';
+        font-size: 15px;
+        text-align: center;
+        border: 2px solid #000;
+        padding: 5% 15% 5% 15%;
+        background-color: #fff;
+        font-weight: bold;
+        color: #000;
+        border-radius: 15%;
+        margin-left: 2%;
+    }
+
+    .dinheiro{
+        font-family:'Impact';
+        font-size: 15px;
+        text-align: center;
+        background-color: #fff;
+        margin-top: -0.7%;
+    }
+
+    body{
+        font-size: 10px; 
+    }   
 }
