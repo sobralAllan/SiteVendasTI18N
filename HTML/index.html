@@ -3,10 +3,12 @@
     <head>
         <!-- Cabeçalho do Site = Orientações -->
         <meta charset="UTF-8"/>
+        <script type="text/javascript" src="../javascript/funcoes.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
         <title>Página Inicial</title> <!-- Título da ABA -->
     </head>
     <body>
+        
         <!-- Corpo do Site = Conteúdo -->
         <header id="cabecalho">
             <!-- Menu de navegação -->
@@ -86,6 +88,59 @@
             <h5>Para mais informações: </h5>
             <p>11 99999-9999</p>
         </section>
+        <section id="formulario">
+            <h2>Formulário de Cadastro</h2>
+            <form>
+                <label id="nome">Nome: </label>
+                <input type="text" id="tNome" placeholder="Nome Completo"><br>
+
+                <label id="telefone">Telefone: </label>
+                <input type="text" id="tTelefone" placeholder="(11) 99999-9999"><br>
+
+                <label id="dtNascimento"> Data de Nascimento: </label>
+                <input type="date" id="tDtNascimento"><br>
+
+                <label id="endereco">Endereço: </label>
+                <input type="text" id="tEndereco" placeholder="R. "><br><br>
+                
+                <input type="radio" name="situacao" id="solteiro" value="Solteiro">
+                <label id="lSolteiro">Solteiro</label><br>
+
+                <input type="radio" name="situacao" id="casado" value="Casado">
+                <label id="lCasado">Casado</label><br>
+
+                <input type="radio" name="situacao" id="divorciado" value="Divorciado">
+                <label id="lDivorciado">Divorciado</label><br>
+
+                <input type="radio" name="situacao" id="viuvo" value="Viúvo">
+                <label id="lViuvo">Viúvo</label><br><br>
+
+                <input type="checkbox" name="profissao" id="pFisica" value="Pessoa Física">
+                <label id="tFisica">Pessoa Física</label><br>
+
+                <input type="checkbox" name="profissao" id="pJuridica" value="Pessoa Jurídica">
+                <label id="tJuridica">Pessoa Jurídica</label><br><br>
+                
+                <label id="lTrabalhando">Você está trabalhando? </label>
+                <select id="trabalhando" name="trabalho">
+                    <option value=""></option>
+                    <option value="sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select><br><br> 
+            </form>
+
+            <button type="submit" onclick="coletar()">Cadastrar</button>
+            <br><br> 
+            
+            <label id="lResultado">Resultado: </label>
+            <textArea id="resultado" rows="10" cols="50" readonly></textArea>
+        </section>
+
+
+
+
+
+
         <footer id="rodape">
             <h5>Desenvolvido por Seu Nome</h5>
         </footer>
